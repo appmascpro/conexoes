@@ -1,6 +1,6 @@
 {
-  "name": "conexoes - MASC PRO",
-  "short_name": "conexoes",
+  "name": "Masc PRO",
+  "short_name": "Masc PRO",
   "description": "Plataforma invite-only da MASC PRO para evolução, comunidade, produtos e eventos.",
   "start_url": "/login",
   "scope": "/",
