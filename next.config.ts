@@ -9,12 +9,19 @@ const withPWA = require("next-pwa")({
 
 const nextConfig: NextConfig = {
   reactStrictMode: true,
-  // Estas linhas abaixo salvam o deploy ignorando erros chatos
   eslint: {
     ignoreDuringBuilds: true,
   },
   typescript: {
     ignoreBuildErrors: true,
+  },
+  // 👇 AQUI ESTÁ A "VACINA" PARA O ERRO NOVO
+  experimental: {
+    turbo: {
+      resolveAlias: {
+        // Deixamos vazio para o Vercel parar de reclamar
+      },
+    },
   },
 };
 
